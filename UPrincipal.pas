@@ -112,6 +112,50 @@ type
       Shift: TShiftState; X, Y: Single);
     procedure BtnBkpMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
+    procedure BtnCadProcedimentoMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnCadProdMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure btnCartaoMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnLancProcedimentoMouseDown(Sender: TObject;
+      Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+    procedure btnLancVendaMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnDasboradMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnHistoricoMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure bntConfiguracaoMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure btnAlteracaoMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure btnRestaurarMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure btnRestaurarMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure btnAlteracaoMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure bntConfiguracaoMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnCustosMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnCustosMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnHistoricoMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnDasboradMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure btnLancVendaMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnLancProcedimentoMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure btnCartaoMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnCadProdMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure BtnCadProcedimentoMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
   private
     { Private declarations }
     versao_app, versao_server: string;
@@ -177,6 +221,18 @@ begin
     end);
 end;
 
+procedure TFPrincipal.bntConfiguracaoMouseDown(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectConfiguracao.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.bntConfiguracaoMouseUp(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectConfiguracao.Opacity := 1;
+end;
+
 procedure TFPrincipal.btnAlteracaoClick(Sender: TObject);
 begin
   if not Assigned(FAlteracao) then
@@ -186,6 +242,18 @@ begin
     begin
 
     end);
+end;
+
+procedure TFPrincipal.btnAlteracaoMouseDown(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectAlteracao.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.btnAlteracaoMouseUp(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectAlteracao.Opacity := 1;
 end;
 
 procedure TFPrincipal.btnAtualizarClick(Sender: TObject);
@@ -221,6 +289,7 @@ var
   I: integer;
 begin
   ProgressBar1.Visible := true;
+  MultiView1.Visible := False;
 {$IFDEF MSWINDOWS}
   strPath := System.IOUtils.TPath.Combine
     ('C:\Users\vinic\Documents\Embarcadero\Studio\Projects\AppSalao\Bd\',
@@ -338,6 +407,18 @@ begin
     end);
 end;
 
+procedure TFPrincipal.BtnCadProcedimentoMouseDown(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectProcedimento.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.BtnCadProcedimentoMouseUp(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectProcedimento.Opacity := 1;
+end;
+
 procedure TFPrincipal.BtnCadProdClick(Sender: TObject);
 begin
   if not Assigned(FProdutos) then
@@ -347,6 +428,18 @@ begin
     begin
 
     end);
+end;
+
+procedure TFPrincipal.BtnCadProdMouseDown(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectCadProduto.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.BtnCadProdMouseUp(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectCadProduto.Opacity := 1;
 end;
 
 procedure TFPrincipal.btnCartaoClick(Sender: TObject);
@@ -360,6 +453,18 @@ begin
     end);
 end;
 
+procedure TFPrincipal.btnCartaoMouseDown(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectFidelidade.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.btnCartaoMouseUp(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectFidelidade.Opacity := 1;
+end;
+
 procedure TFPrincipal.BtnCustosClick(Sender: TObject);
 begin
   if not Assigned(Fcusto) then
@@ -369,6 +474,18 @@ begin
     begin
 
     end);
+end;
+
+procedure TFPrincipal.BtnCustosMouseDown(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectCustos.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.BtnCustosMouseUp(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectCustos.Opacity := 1;
 end;
 
 procedure TFPrincipal.BtnDasboradClick(Sender: TObject);
@@ -382,6 +499,18 @@ begin
     end);
 end;
 
+procedure TFPrincipal.BtnDasboradMouseDown(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectDashBoard.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.BtnDasboradMouseUp(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectDashBoard.Opacity := 1;
+end;
+
 procedure TFPrincipal.BtnHistoricoClick(Sender: TObject);
 begin
   if not Assigned(FHistorico) then
@@ -391,6 +520,18 @@ begin
     begin
 
     end);
+end;
+
+procedure TFPrincipal.BtnHistoricoMouseDown(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectHistorico.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.BtnHistoricoMouseUp(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectHistorico.Opacity := 1;
 end;
 
 procedure TFPrincipal.btnInfClick(Sender: TObject);
@@ -415,6 +556,18 @@ begin
     end);
 end;
 
+procedure TFPrincipal.BtnLancProcedimentoMouseDown(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectLancProcedimento.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.BtnLancProcedimentoMouseUp(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectLancProcedimento.Opacity := 1;
+end;
+
 procedure TFPrincipal.btnLancVendaClick(Sender: TObject);
 begin
   if not Assigned(FVendaProduto) then
@@ -424,6 +577,18 @@ begin
     begin
 
     end);
+end;
+
+procedure TFPrincipal.btnLancVendaMouseDown(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectVenda.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.btnLancVendaMouseUp(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectVenda.Opacity := 1;
 end;
 
 procedure TFPrincipal.btnRestaurarClick(Sender: TObject);
@@ -489,6 +654,18 @@ begin
 {$ENDIF}
   ProgressBar1.Visible := False;
   Application.Terminate;
+end;
+
+procedure TFPrincipal.btnRestaurarMouseDown(Sender: TObject;
+Button: TMouseButton; Shift: TShiftState; X, Y: Single);
+begin
+  RectRestaurar.Opacity := 0.5;
+end;
+
+procedure TFPrincipal.btnRestaurarMouseUp(Sender: TObject; Button: TMouseButton;
+Shift: TShiftState; X, Y: Single);
+begin
+  RectRestaurar.Opacity := 1;
 end;
 
 procedure TFPrincipal.FormCreate(Sender: TObject);
