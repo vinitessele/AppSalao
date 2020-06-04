@@ -50,7 +50,7 @@
     <Transaction>2020/02/07 17:57:17.000.063,C:\Users\vinic\Documents\Embarcadero\Studio\Projects\AppSalao\Unit1.fmx=C:\Users\vinic\Documents\Embarcadero\Studio\Projects\AppSalao\USobre.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5" Android="RQ8M30LNNQB" Android64="RQ8M30LNNQB"/>
+		<NoProfile iOSSimulator="iPhone5" Android="" Android64=""/>
 	</ActiveMobileDevice>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="android-support-v4.dex.jar"/>

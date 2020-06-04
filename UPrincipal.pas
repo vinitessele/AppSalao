@@ -80,7 +80,6 @@ type
     RectRestaurar: TRectangle;
     Circle13: TCircle;
     btnRestaurar: TButton;
-    ProgressBar1: TProgressBar;
     LayoutLogo: TLayout;
     RectangleLogoEmpresa: TRectangle;
     procedure BtnCadCliClick(Sender: TObject);
@@ -288,38 +287,24 @@ var
   AppPath: string;
   I: integer;
 begin
-  ProgressBar1.Visible := true;
   MultiView1.Visible := False;
 {$IFDEF MSWINDOWS}
   strPath := System.IOUtils.TPath.Combine
     ('C:\Users\vinic\Documents\Embarcadero\Studio\Projects\AppSalao\Bd\',
     'Bd.db3');
   AppPath := IOUtils.TPath.GetDownloadsPath;
-  strDestino := IOUtils.TPath.Combine(AppPath, 'smyFile.db3');
+  strDestino := IOUtils.TPath.Combine(AppPath, 'DADOS1.db3');
 
   If not FileExists(strDestino) Then
   Begin
-    for I := 0 to 100 do
-    begin
-      Sleep(100);
-      ProgressBar1.Value := I;
-    end;
     TFile.Copy(strPath, strDestino);
   End
   else
   begin
-    for I := 0 to 100 do
-    begin
-      Sleep(100);
-      ProgressBar1.Value := I;
-    end;
+
     DM.FDConnection1.Connected := False;
     TFile.Delete(strDestino);
-    for I := 0 to 100 do
-    begin
-      Sleep(100);
-      ProgressBar1.Value := I;
-    end;
+
     TFile.Copy(strPath, strDestino);
   end;
 {$ENDIF}
@@ -332,32 +317,18 @@ begin
     'DADOS1.db3';
   If not FileExists(strDestino) Then
   Begin
-    for I := 0 to 100 do
-    begin
-      Sleep(100);
-      ProgressBar1.Value := I;
-    end;
     TFile.Copy(strPath, strDestino);
   End
   else
   begin
-    for I := 0 to 100 do
-    begin
-      Sleep(100);
-      ProgressBar1.Value := I;
-    end;
+
     DM.FDConnection1.Connected := False;
     TFile.Delete(strDestino);
-    for I := 0 to 100 do
-    begin
-      Sleep(100);
-      ProgressBar1.Value := I;
-    end;
     TFile.Copy(strPath, strDestino);
   end;
 
 {$ENDIF}
-  ProgressBar1.Visible := False;
+
 end;
 
 procedure TFPrincipal.BtnBkpMouseDown(Sender: TObject; Button: TMouseButton;
@@ -598,7 +569,6 @@ var
   AppPath: string;
   I: integer;
 begin
-  ProgressBar1.Visible := true;
 {$IFDEF MSWINDOWS}
   AppPath := IOUtils.TPath.GetDownloadsPath;
   strOrigem := IOUtils.TPath.Combine(AppPath, 'smyFile.db3');
@@ -614,11 +584,7 @@ begin
     Sleep(1000);
     DM.FDConnection1.Connected := False;
     TFile.Delete(strPath);
-    for I := 0 to 100 do
-    begin
-      Sleep(10);
-      ProgressBar1.Value := ProgressBar1.Value + I;
-    end;
+
     TFile.Copy(strOrigem, strPath);
   end;
 
@@ -632,11 +598,7 @@ begin
   Begin
     TFile.Copy(strOrigem, strPath);
     ProgressBar1.Visible := true;
-    for I := 0 to 100 do
-    begin
-      Sleep(10);
-      ProgressBar1.Value := ProgressBar1.Value + I;
-    end;
+
   End
   else
   begin
@@ -644,15 +606,10 @@ begin
     DM.FDConnection1.Connected := False;
     TFile.Delete(strPath);
     ProgressBar1.Visible := true;
-    for I := 0 to 100 do
-    begin
-      Sleep(10);
-      ProgressBar1.Value := ProgressBar1.Value + I;
-    end;
+
     TFile.Copy(strOrigem, strPath);
   end;
 {$ENDIF}
-  ProgressBar1.Visible := False;
   Application.Terminate;
 end;
 
