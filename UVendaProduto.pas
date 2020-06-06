@@ -259,6 +259,8 @@ begin
     dm.FDQBuscaClienteNomecliente_id.AsString;
   dm.FDQVenda.Post;
   dm.FDConnection1.CommitRetaining;
+  LabelValorItem.Text := 'R$.:';
+  LabelValor.Text := 'R$.:';
   TabItem2.Enabled := True;
   TabControl1.TabIndex := 1;
 end;

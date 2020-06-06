@@ -53,8 +53,8 @@ object DM: TDM
     Connection = FDConnection1
     SQL.Strings = (
       'select * from pontuacao')
-    Left = 359
-    Top = 192
+    Left = 295
+    Top = 256
     object FDQPontuacaopontuacao_id: TFDAutoIncField
       FieldName = 'pontuacao_id'
       Origin = 'pontuacao_id'
@@ -96,8 +96,8 @@ object DM: TDM
         'select coalesce(sum(pontuacao_pontos),0) as pontuacao from pontu' +
         'acao'
       'where pontuacao_id_cliente = :idCliente')
-    Left = 55
-    Top = 352
+    Left = 47
+    Top = 384
     ParamData = <
       item
         Name = 'IDCLIENTE'
@@ -118,8 +118,8 @@ object DM: TDM
     Connection = FDConnection1
     SQL.Strings = (
       'select * from procedimento')
-    Left = 191
-    Top = 192
+    Left = 127
+    Top = 256
     object FDQProcedimentosprocedimento_id: TFDAutoIncField
       FieldName = 'procedimento_id'
       Origin = 'procedimento_id'
@@ -156,8 +156,8 @@ object DM: TDM
     Connection = FDConnection1
     SQL.Strings = (
       'select * from parametro')
-    Left = 112
-    Top = 192
+    Left = 48
+    Top = 256
     object FDQParametroparametro_nome: TStringField
       FieldName = 'parametro_nome'
       Origin = 'parametro_nome'
@@ -202,7 +202,7 @@ object DM: TDM
       'inner join pontuacao p on c.cliente_id = p.pontuacao_id_cliente'
       'group by c.cliente_nome')
     Left = 151
-    Top = 136
+    Top = 200
     object FDQListaPontossoma: TLargeintField
       AutoGenerateValue = arDefault
       FieldName = 'soma'
@@ -299,8 +299,8 @@ object DM: TDM
       'from pontuacao'
       'group by pontuacao_data'
       'order by pontuacao_data  asc')
-    Left = 176
-    Top = 286
+    Left = 168
+    Top = 318
     object FDQSomaAtendimentoDiapontuacao_data: TDateField
       FieldName = 'pontuacao_data'
       Origin = 'pontuacao_data'
@@ -321,7 +321,7 @@ object DM: TDM
       'p.pontuacao_id_procedimento = pro.procedimento_id'
       'order by p.pontuacao_valor asc')
     Left = 56
-    Top = 94
+    Top = 198
     object FDQListAtendimentoDiapontuacao_id: TFDAutoIncField
       FieldName = 'pontuacao_id'
       Origin = 'pontuacao_id'
@@ -488,8 +488,8 @@ object DM: TDM
     Connection = FDConnection1
     SQL.Strings = (
       'select * from produto')
-    Left = 280
-    Top = 190
+    Left = 216
+    Top = 254
     object FDQProdutosproduto_id: TFDAutoIncField
       FieldName = 'produto_id'
       Origin = 'produto_id'
@@ -517,8 +517,8 @@ object DM: TDM
     Connection = FDConnection1
     SQL.Strings = (
       'select * from venda')
-    Left = 367
-    Top = 350
+    Left = 359
+    Top = 382
     object FDQVendavenda_id: TFDAutoIncField
       FieldName = 'venda_id'
       Origin = 'venda_id'
@@ -549,8 +549,8 @@ object DM: TDM
     Connection = FDConnection1
     SQL.Strings = (
       'select * from VendaItem')
-    Left = 287
-    Top = 350
+    Left = 279
+    Top = 382
     object FDQVendaItemvendaItem_id: TFDAutoIncField
       FieldName = 'vendaItem_id'
       Origin = 'vendaItem_id'
@@ -622,8 +622,8 @@ object DM: TDM
       'select COALESCE(sum(venda_valor),0)as valor from venda'
       'where venda_data between :dataIni and :dataFim '
       'and venda_tp_pagamento=:tp_pagamento')
-    Left = 175
-    Top = 350
+    Left = 167
+    Top = 382
     ParamData = <
       item
         Name = 'DATAINI'
@@ -656,8 +656,8 @@ object DM: TDM
     Connection = FDConnection1
     SQL.Strings = (
       'select * from cliente where cliente_nome like :nome')
-    Left = 223
-    Top = 14
+    Left = 167
+    Top = 38
     ParamData = <
       item
         Name = 'NOME'
@@ -855,8 +855,8 @@ object DM: TDM
         'inner join procedimento pr on p.pontuacao_id_procedimento = pr.p' +
         'rocedimento_id'
       'where pontuacao_id_cliente = :idCliente')
-    Left = 231
-    Top = 86
+    Left = 247
+    Top = 198
     ParamData = <
       item
         Name = 'IDCLIENTE'
@@ -1059,8 +1059,8 @@ object DM: TDM
     SQL.Strings = (
       'select * from produto'
       'where produto_nome like :nomeProduto')
-    Left = 56
-    Top = 286
+    Left = 48
+    Top = 318
     ParamData = <
       item
         Name = 'NOMEPRODUTO'
@@ -1104,8 +1104,8 @@ object DM: TDM
         ' from VendaItem vi inner join produto p on vi.vendaitem_produto_' +
         'id = p.produto_id '
       'where vendaitem_venda_id=:venda')
-    Left = 464
-    Top = 192
+    Left = 400
+    Top = 256
     ParamData = <
       item
         Name = 'VENDA'
