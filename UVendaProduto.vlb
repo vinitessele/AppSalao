@@ -1,250 +1,250 @@
 ﻿[Label1]
-Coordinates=306,161,46,51
+Coordinates=306,161,53,58
 
 [LabelMenu]
-Coordinates=540,160,68,51
+Coordinates=540,160,78,58
 
 [Layout1]
-Coordinates=10,265,53,33
+Coordinates=10,265,60,36
 
 [LabelMenuModelo]
-Coordinates=133,161,104,51
+Coordinates=133,161,120,58
 
 [VertScrollBox1]
-Coordinates=514,222,88,33
+Coordinates=514,222,100,36
 
 [btnInf]
-Coordinates=10,161,42,51
+Coordinates=10,161,47,58
 
 [ToolBar1]
-Coordinates=446,222,58,33
+Coordinates=446,222,67,36
 
 [Image1]
-Coordinates=247,161,49,51
+Coordinates=247,161,57,58
 
 [bntMenu]
-Coordinates=324,10,57,51
+Coordinates=324,10,64,58
 
 [Rectangle1]
-Coordinates=367,222,69,33
+Coordinates=367,222,80,36
 
 [TabItem1]
-Coordinates=195,222,59,33
+Coordinates=195,222,69,36
 
 [TabItem2]
-Coordinates=126,222,59,33
+Coordinates=126,222,69,36
 
 [LayoutListClientes]
-Coordinates=10,222,106,33
+Coordinates=10,222,120,36
 
 [EditNomeConsulta]
-Coordinates=469,10,106,51
+Coordinates=469,10,122,58
 
 [btnBusca]
-Coordinates=62,161,61,51
+Coordinates=62,161,68,58
 
 [LayoutConsulta]
-Coordinates=446,161,92,33
+Coordinates=446,161,104,36
 
 [TabControl1]
-Coordinates=362,161,74,33
+Coordinates=362,161,85,36
 
 []
 Coordinates=960,860,108,177
 Visible=True
 
 [ListViewClienteProdutos]
-Coordinates=140,10,135,141
+Coordinates=140,10,154,168
 Visible=True
 
 [DM.FDQParametro]
-Coordinates=100,748,109,159
+Coordinates=100,748,130,190
 
 [LabelValorItem]
-Coordinates=11,748,88,51
+Coordinates=11,748,101,58
 
 [DM.FDQPontuacaoZera]
-Coordinates=358,748,136,177
+Coordinates=358,748,163,212
 
 [RoundRect7]
-Coordinates=418,615,74,33
+Coordinates=418,615,86,36
 
 [DM.FDQItemVendasPeriodo]
-Coordinates=497,594,151,303
+Coordinates=497,594,178,366
 
 [DM.FDQVendaItem]
-Coordinates=640,963,108,141
+Coordinates=640,963,129,168
 
 [DM.FDQSelecionaProduto]
-Coordinates=613,434,142,33
+Coordinates=613,434,166,36
 Visible=False
 
 [TabItem3]
-Coordinates=504,274,59,33
+Coordinates=504,274,69,36
 
 [DM.FDQSomaVendasPeriodo]
-Coordinates=260,200,157,69
+Coordinates=260,200,186,80
 
 [DM.FDQListaPontos]
-Coordinates=497,434,113,141
+Coordinates=497,434,132,168
 
 [DM.FDQListAtendimentoDia]
-Coordinates=96,317,152,393
+Coordinates=96,317,177,476
 
 [LayoutTpPagamentoVenda]
-Coordinates=892,195,147,33
+Coordinates=892,195,170,36
 
 [Layout45]
-Coordinates=504,326,59,33
+Coordinates=504,326,67,36
 
 [Layout44]
-Coordinates=504,378,59,33
+Coordinates=504,378,67,36
 
 [DM.FDQConsultaFaturamento]
-Coordinates=613,143,161,69
+Coordinates=613,143,188,80
 
 [DM.FDQCustoFixo]
-Coordinates=749,231,105,141
+Coordinates=749,231,123,168
 
 [BtnVenda]
-Coordinates=504,80,62,51
+Coordinates=504,80,71,58
 
 [Layout46]
-Coordinates=260,615,59,33
+Coordinates=260,615,67,36
 
 [DM.FDQListProdutosCliente]
-Coordinates=256,274,152,303
+Coordinates=256,274,177,366
 
 [ComboBoxTpPagamentoVenda]
-Coordinates=613,1,168,123
+Coordinates=613,1,195,146
 
 [DM.FDQBuscaClienteNome]
-Coordinates=300,0,148,33
+Coordinates=300,0,175,36
 Visible=False
 
 [DM.FDQVenda]
-Coordinates=749,695,105,141
+Coordinates=749,695,126,168
 
 [DM.FDQListServicosCliente]
-Coordinates=819,391,150,285
+Coordinates=819,391,175,344
 
 [DM.FDQAtendimento]
 Coordinates=819,1,117,87
 
 [DM.FDQClienteAll]
-Coordinates=532,916,102,159
+Coordinates=532,916,120,190
 
 [DM.FDQPontuacao]
-Coordinates=219,748,136,177
+Coordinates=219,748,163,212
 
 [DM.FDQProdutos]
-Coordinates=423,963,100,123
+Coordinates=423,963,116,146
 
 [DM.FDQProcedimentos]
-Coordinates=284,963,129,159
+Coordinates=284,963,150,190
 
 [DM.FDQCliente]
-Coordinates=0,0,89,159
+Coordinates=0,0,105,190
 
 [LabelClientevenda]
-Coordinates=66,963,105,51
+Coordinates=66,963,121,58
 
 [DM.FDQSomaPontos]
-Coordinates=819,107,117,69
+Coordinates=819,107,138,80
 
 [BindSourceDB1]
-Coordinates=290,10,135,177
+Coordinates=350,10,161,212
 
 [BindingsList1]
-Coordinates=283,231,82,33
+Coordinates=283,231,91,36
 
 [BindSourceDB2]
-Coordinates=940,340,128,141
+Coordinates=940,340,153,168
 
 [Label2]
-Coordinates=484,157,46,51
+Coordinates=484,157,53,58
 
 [Layout2]
-Coordinates=31,831,53,33
+Coordinates=31,831,60,36
 
 [DateEditVenda]
-Coordinates=0,0,115,51
+Coordinates=0,0,138,58
 
 [StyleBook1]
-Coordinates=713,621,70,33
+Coordinates=713,621,80,36
 
 [DM.FDQSomaAtendimentoDia]
-Coordinates=770,0,161,87
+Coordinates=770,0,190,102
 
 [ImageCarrinhoh]
-Coordinates=910,1,93,51
+Coordinates=910,1,107,58
 
 [btnBuscaProduto]
-Coordinates=1100,1,100,51
+Coordinates=1100,1,113,58
 
 [LayoutCarrinho]
-Coordinates=910,754,91,33
+Coordinates=910,754,103,36
 
 [LayoutProdutos]
-Coordinates=910,809,93,33
+Coordinates=910,809,105,36
 
 [VertScrollBox2]
-Coordinates=1100,155,88,33
+Coordinates=1100,155,100,36
 
 [ListViewProdutosCliente]
-Coordinates=1100,340,135,141
+Coordinates=1100,340,154,168
 Visible=True
 
 [LabelValor]
-Coordinates=713,882,66,51
+Coordinates=713,882,76,58
 
 [btnVendaProd]
-Coordinates=913,250,84,51
+Coordinates=913,250,96,58
 
 [LabelItem]
-Coordinates=913,327,62,51
+Coordinates=913,327,71,58
 
 [EditProdConsulta]
-Coordinates=1100,78,101,51
+Coordinates=1100,78,115,58
 
 [RoundRect1]
-Coordinates=913,1069,74,33
+Coordinates=913,1069,86,36
 
 [Layout3]
-Coordinates=0,962,53,33
+Coordinates=0,962,60,36
 
 [ImageValor]
-Coordinates=195,998,69,51
+Coordinates=195,998,80,58
 
 [DM.FDQListaCarrinho]
-Coordinates=1091,870,121,33
+Coordinates=1091,870,142,36
 Visible=False
 
 [ColorAnimation1]
-Coordinates=686,391,97,33
+Coordinates=686,391,110,36
 
 [Label3]
-Coordinates=686,231,46,51
+Coordinates=686,231,53,58
 
 [btnLimparCarrinho]
-Coordinates=686,556,107,51
+Coordinates=686,556,121,58
 
 [Layout4]
-Coordinates=359,615,53,33
+Coordinates=359,615,60,36
 
 [btnSairCarrinho]
-Coordinates=686,486,92,51
+Coordinates=686,486,105,58
 
 [CircleCarrinhovazio]
-Coordinates=969,71,111,33
+Coordinates=969,71,127,36
 
 [PanelCarrinho]
-Coordinates=0,582,84,33
+Coordinates=0,582,97,36
 
 [ListViewCarrinho]
-Coordinates=960,880,99,141
+Coordinates=960,880,112,234
 Visible=True
 
 [BindSourceDB3]
-Coordinates=1091,870,108,177
+Coordinates=1091,870,129,212
 

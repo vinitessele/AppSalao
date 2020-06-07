@@ -1,32 +1,14 @@
 ﻿[DM.FDQBuscaClienteNome]
 Coordinates=10,496,148,159
 
-[LayoutProduto]
-Coordinates=140,968,87,33
-
 [DM.FDQListProdutosCliente]
 Coordinates=197,10,152,303
 
 [DM.FDQVendaItem]
 Coordinates=725,496,108,141
 
-[Label18]
-Coordinates=1544,696,52,51
-
 [DM.FDQVenda]
 Coordinates=314,496,105,141
-
-[CalloutRectangle2]
-Coordinates=10,968,104,33
-
-[LayoutTotal]
-Coordinates=1625,922,72,33
-
-[CalloutRectangle3]
-Coordinates=1495,922,104,33
-
-[LayoutRecebidoCartao]
-Coordinates=1339,922,127,33
 
 [DM.FDQSelecionaProduto]
 Coordinates=990,496,142,123
@@ -37,68 +19,17 @@ Coordinates=592,496,105,141
 [DM.FDQSomaPontos]
 Coordinates=10,696,117,69
 
-[Label6]
-Coordinates=597,786,46,51
-
-[Label3]
-Coordinates=1119,696,46,51
-
-[LayoutVendaDinheiro]
-Coordinates=1191,922,120,33
-
-[TabItem1]
-Coordinates=1112,922,59,33
-
-[LayoutVendaCartao]
-Coordinates=973,922,111,33
-
-[LayoutServicoDinheiro]
-Coordinates=819,922,127,33
-
-[CalloutRectangle6]
-Coordinates=689,922,104,33
-
 [bntMenu]
 Coordinates=920,786,57,51
-
-[CalloutRectangle5]
-Coordinates=559,922,104,33
-
-[LayoutServicoCartao]
-Coordinates=414,922,117,33
-
-[LabelServicoDebito]
-Coordinates=306,696,110,51
 
 [DM.FDQListaPontos]
 Coordinates=450,496,113,141
 
-[Layout3]
-Coordinates=344,922,53,33
-
 [Rectangle1]
 Coordinates=254,922,69,33
 
-[LayoutRecebidoDinheiro]
-Coordinates=89,922,136,33
-
-[SpeedButton2]
-Coordinates=1459,786,84,51
-
-[LabelCartao]
-Coordinates=502,786,73,51
-
 [TabItem2]
 Coordinates=10,922,59,33
-
-[Label4]
-Coordinates=1614,696,46,51
-
-[DateEdit1]
-Coordinates=1245,696,115,51
-
-[LayoutServicos]
-Coordinates=1655,854,91,33
 
 [DM.FDQItemVendasPeriodo]
 Coordinates=384,10,151,303
@@ -106,83 +37,26 @@ Coordinates=384,10,151,303
 [DM.FDQParametro]
 Coordinates=1508,10,109,159
 
-[LabelServicoCartao]
-Coordinates=364,786,111,51
-
-[SpeedButton1]
-Coordinates=530,696,84,51
-
 [VertScrollBox2]
 Coordinates=1545,854,88,33
-
-[Layout2]
-Coordinates=1475,854,53,33
 
 [DM.FDQProdutos]
 Coordinates=864,496,100,123
 
-[LabelCusto]
-Coordinates=994,786,70,51
-
-[Layout3D1]
-Coordinates=17,1452,66,33
-
-[Label7]
-Coordinates=1182,696,46,51
-
-[LayoutDate]
-Coordinates=1385,854,70,33
-
 [LabelMenuModelo]
 Coordinates=1188,786,104,51
-
-[Label2total]
-Coordinates=1456,696,68,51
-
-[CalloutRectangle1]
-Coordinates=1255,854,104,33
-
-[RectAnimation1]
-Coordinates=1231,111,92,33
-
-[LabelTotalPeriodo]
-Coordinates=847,696,104,51
 
 [TabControl1]
 Coordinates=1160,854,74,33
 
-[Label5]
-Coordinates=1393,696,46,51
-
-[DateEditfim]
-Coordinates=636,696,115,51
-
 [ToolBar1]
 Coordinates=1083,854,58,33
-
-[LabelProdutoCartao]
-Coordinates=660,786,113,51
 
 [LabelMenu]
 Coordinates=442,696,68,51
 
-[VertScrollBoxDashboard]
-Coordinates=918,854,136,33
-
 [DM.FDQSomaVendasPeriodo]
 Coordinates=1366,496,157,69
-
-[LabelServicoDinheiro]
-Coordinates=319,854,120,51
-
-[DateEditIni]
-Coordinates=10,854,115,51
-
-[CalloutRectangle4]
-Coordinates=788,854,104,33
-
-[LabelDinheiro]
-Coordinates=1084,786,83,51
 
 [Image1]
 Coordinates=297,786,49,51
@@ -193,20 +67,11 @@ Coordinates=930,10,136,177
 [Layout1]
 Coordinates=718,854,53,33
 
-[Label8]
-Coordinates=158,854,46,51
-
 [Label1]
 Coordinates=857,786,46,51
 
-[LabelDebito]
-Coordinates=1635,786,73,51
-
 [DM.FDQClienteAll]
 Coordinates=1263,10,102,159
-
-[Label9]
-Coordinates=784,696,46,51
 
 [DM.FDQListServicosCliente]
 Coordinates=572,10,150,285
@@ -214,27 +79,12 @@ Coordinates=572,10,150,285
 [btnInf]
 Coordinates=800,786,42,51
 
-[LabelProdutoCredito]
-Coordinates=976,696,116,51
-
-[LabelProdutoDebito]
-Coordinates=159,786,112,51
-
-[LabelProdutoDinheiro]
-Coordinates=10,786,122,51
-
 [DM.FDQProcedimentos]
 Coordinates=1103,10,129,159
-
-[Label2]
-Coordinates=466,854,46,51
 
 [DM.FDQSomaAtendimentoDia]
 Coordinates=961,370,161,33
 Visible=False
-
-[LabelCredito]
-Coordinates=221,854,77,51
 
 [DM.FDQCliente]
 Coordinates=1393,10,89,159
@@ -242,17 +92,8 @@ Coordinates=1393,10,89,159
 [DM.FDQPontuacaoZera]
 Coordinates=757,10,136,177
 
-[Label20]
-Coordinates=1565,786,52,51
-
-[DateEdit2]
-Coordinates=158,696,115,51
-
 [DM.FDQConsultaFaturamento]
 Coordinates=1562,496,161,69
-
-[LabelServicoCredito]
-Coordinates=1318,786,114,51
 
 [VertScrollBox1]
 Coordinates=608,854,88,33
@@ -265,7 +106,7 @@ Coordinates=200,330,96,231
 Visible=True
 
 []
-Coordinates=790,360,147,105
+Coordinates=1112,922,59,33
 
 [BindingsList1]
 Coordinates=206,395,82,33
