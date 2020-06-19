@@ -328,7 +328,6 @@ begin
   end;
 
 {$ENDIF}
-
 end;
 
 procedure TFPrincipal.BtnBkpMouseDown(Sender: TObject; Button: TMouseButton;
@@ -591,13 +590,12 @@ begin
 {$ENDIF}
 {$IF DEFINED(iOS) or DEFINED(ANDROID)}
   AppPath := IOUtils.TPath.GetDownloadsPath;
-  strOrigem := IOUtils.TPath.Combine(AppPath, 'smyFile.db3');
+  strOrigem := IOUtils.TPath.Combine(AppPath, 'DADOS1.db3');
   strPath := System.IOUtils.TPath.Combine(System.IOUtils.TPath.GetDocumentsPath,
     'Bd.db3');
   If not FileExists(strPath) Then
   Begin
     TFile.Copy(strOrigem, strPath);
-    ProgressBar1.Visible := true;
 
   End
   else
@@ -605,7 +603,6 @@ begin
     Sleep(1000);
     DM.FDConnection1.Connected := False;
     TFile.Delete(strPath);
-    ProgressBar1.Visible := true;
 
     TFile.Copy(strOrigem, strPath);
   end;
@@ -629,7 +626,7 @@ procedure TFPrincipal.FormCreate(Sender: TObject);
 var
   vFoto: TStream;
 begin
-  versao_app := '1,97';
+  versao_app := '2,0';
   versao_server := '0.0';
   LabelVersao.Text := 'Versão ' + versao_app;
   LayoutUpdate.Margins.Top := FPrincipal.Height + 50;

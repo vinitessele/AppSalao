@@ -163,7 +163,7 @@ begin
     Text := descricao;
     font.Size := 12;
     font.Style := [TFontStyle.fsBold];
-    Position.X := 50;
+    Position.X := 20;
     Position.Y := 20;
     rect.AddObject(lbl);
   end;
@@ -441,9 +441,9 @@ begin
     ServicoSomaDebito, ServicoSomaDinheiro);
   AddItem('002', 'Produtos', ProdutoTotal, ProdutoSomaCredito,
     ProdutoSomaDebito, ProdutoSomaDinheiro);
-  AddItem('003', 'Produtos+Serviços', ServicoTotal + ProdutoTotal,
-    ServicoSomaCredito + ProdutoSomaCredito, ServicoSomaDebito +
-    ProdutoSomaDebito, ServicoSomaDinheiro + ProdutoSomaDinheiro);
+  AddItem('003', 'Produtos+Serviços', vlrliquido, ServicoSomaCredito +
+    ProdutoSomaCredito, ServicoSomaDebito + ProdutoSomaDebito,
+    ServicoSomaDinheiro + ProdutoSomaDinheiro);
 
 end;
 
