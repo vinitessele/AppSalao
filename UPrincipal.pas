@@ -216,7 +216,9 @@ begin
   FConfiguracao.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FConfiguracao := nil;
+      FConfiguracao.disposeof;
     end);
 end;
 
@@ -239,7 +241,9 @@ begin
   FAlteracao.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FAlteracao := nil;
+      FAlteracao.disposeof;
     end);
 end;
 
@@ -310,8 +314,6 @@ begin
 {$ENDIF}
 {$IF DEFINED(iOS) or DEFINED(ANDROID)}
   strPath := System.IOUtils.TPath.GetDocumentsPath + PathDelim + 'Bd.db3';
-  // AppPath := System.IOUtils.TPath.GetDownloadsPath;
-  // strDestino := IOUtils.TPath.Combine(AppPath, 'smyFile.db3');
 
   strDestino := System.IOUtils.TPath.GetDownloadsPath + PathDelim +
     'DADOS1.db3';
@@ -321,7 +323,6 @@ begin
   End
   else
   begin
-
     DM.FDConnection1.Connected := False;
     TFile.Delete(strDestino);
     TFile.Copy(strPath, strDestino);
@@ -350,7 +351,9 @@ begin
   FCadCliente.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FCadCliente := nil;
+      FCadCliente.disposeof;
     end);
 end;
 
@@ -373,7 +376,9 @@ begin
   FListaProcedimentos.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FListaProcedimentos := nil;
+      FListaProcedimentos.disposeof;
     end);
 end;
 
@@ -396,7 +401,9 @@ begin
   FProdutos.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FProdutos := nil;
+      FProdutos.disposeof;
     end);
 end;
 
@@ -419,7 +426,9 @@ begin
   FFidelidade.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FFidelidade := nil;
+      FFidelidade.disposeof;
     end);
 end;
 
@@ -442,7 +451,9 @@ begin
   Fcusto.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      Fcusto := nil;
+      Fcusto.disposeof;
     end);
 end;
 
@@ -465,7 +476,9 @@ begin
   FDashboard.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FDashboard := nil;
+      FDashboard.disposeof;
     end);
 end;
 
@@ -488,7 +501,9 @@ begin
   FHistorico.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FHistorico := nil;
+      FHistorico.disposeof;
     end);
 end;
 
@@ -511,7 +526,9 @@ begin
   FSobre.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FSobre := nil;
+      FSobre.disposeof;
     end);
 end;
 
@@ -522,7 +539,9 @@ begin
   FVendaProcedimento.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FVendaProcedimento := nil;
+      FVendaProcedimento.disposeof;
     end);
 end;
 
@@ -545,7 +564,9 @@ begin
   FVendaProduto.ShowModal(
     procedure(ModalResult: TModalResult)
     begin
-
+      sleep(500);
+      FVendaProduto := nil;
+      FVendaProduto.disposeof;
     end);
 end;
 
@@ -580,10 +601,9 @@ begin
   End
   else
   begin
-    Sleep(1000);
+    sleep(1000);
     DM.FDConnection1.Connected := False;
     TFile.Delete(strPath);
-
     TFile.Copy(strOrigem, strPath);
   end;
 
@@ -596,11 +616,10 @@ begin
   If not FileExists(strPath) Then
   Begin
     TFile.Copy(strOrigem, strPath);
-
   End
   else
   begin
-    Sleep(1000);
+    sleep(1000);
     DM.FDConnection1.Connected := False;
     TFile.Delete(strPath);
 
@@ -626,7 +645,7 @@ procedure TFPrincipal.FormCreate(Sender: TObject);
 var
   vFoto: TStream;
 begin
-  versao_app := '2,0';
+  versao_app := '2,1';
   versao_server := '0.0';
   LabelVersao.Text := 'Versão ' + versao_app;
   LayoutUpdate.Margins.Top := FPrincipal.Height + 50;
@@ -650,7 +669,7 @@ begin
     var
       JsonObj: TJSONObject;
     begin
-      Sleep(2000);
+      sleep(2000);
       try
         RESTRequest1.Execute;
       except
@@ -668,7 +687,7 @@ begin
 
         versao_server := TJSONObject(JsonObj).GetValue('Versao').Value;
       finally
-        JsonObj.DisposeOf;
+        JsonObj.disposeof;
       end;
     end);
   t.OnTerminate := OnFinishUpdate;
